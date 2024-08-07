@@ -12,7 +12,13 @@ process.on('SIGTERM', () => {
 })
 
 const parser = require('ua-parser-js');
-const { uniqueNamesGenerator, animals, colors } = require('unique-names-generator');
+const { uniqueNamesGenerator } = require('unique-names-generator');
+const name_dictionary = [
+  "高达","雷姆","拉姆","周防有希","七仓凛","坂本","胖虎","顶真","范式","符篱","樱岛麻衣","爱丽","Neuro-Sama","Vedal","丛雨","常陆茉子","绫地宁宁","真白花音"
+]
+const adjective_dictionary = [
+  "抽电子烟的","在蹭桌角的","Heart的","红色有角的","Coolest的","全是我的","YYDS的","砧板的","菜就多练的","在0721的"
+]
 
 class SnapdropServer {
 
@@ -227,7 +233,7 @@ class Peer {
         const displayName = uniqueNamesGenerator({
             length: 2,
             separator: ' ',
-            dictionaries: [colors, animals],
+            dictionaries: [name_dictionary, adjective_dictionary],
             style: 'capital',
             seed: this.id.hashCode()
         })
