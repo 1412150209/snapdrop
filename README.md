@@ -1,6 +1,7 @@
 # Snapdrop 
 
 [Snapdrop](https://snapdrop.net): local file sharing in your browser. Inspired by Apple's Airdrop.
+本仓库对页面进行了汉化，并夹带了一些私货(bushi)
 
 
 #### Snapdrop is built with the following awesome technologies:
